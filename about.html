@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="h-full overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קצת עליי</title>
+    <!-- Heebo and Assistant Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Assistant:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        calmBg: '#f4f7fb',
+                        cardBg: '#ffffff',
+                        textMain: '#334155',
+                        textMuted: '#64748b',
+                        accentSoft: '#38bdf8',
+                        accentStrong: '#0284c7',
+                        accentHover: '#e0f2fe',
+                        primary: '#1d4ed8',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Heebo', 'Assistant', 'sans-serif']
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f4f7fb;
+            background-image:
+                radial-gradient(#cbd5e1 1px, transparent 1px),
+                linear-gradient(135deg, #f8fafc 0%, #f0f9ff 50%, #e0f2fe 100%);
+            background-size: 32px 32px, cover;
+            background-attachment: fixed;
+            font-family: 'Heebo', 'Assistant', 'sans-serif';
+        }
+    </style>
+</head>
+
+<body class="text-textMain min-h-screen relative flex flex-col overflow-y-auto">
+
+    <!-- Background lighting blobs -->
+    <div
+        class="absolute top-0 right-[-10%] w-96 h-96 bg-sky-300/30 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0">
+    </div>
+    <div class="absolute bottom-[20%] left-[-10%] w-80 h-80 bg-indigo-300/25 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0"
+        style="animation-delay: 2s;"></div>
+    <div class="absolute top-[40%] left-[20%] w-72 h-72 bg-pink-300/15 rounded-full filter blur-[90px] animate-blob pointer-events-none z-0"
+        style="animation-delay: 4s;"></div>
+
+    <!-- Top Navigation -->
+    <nav class="relative z-50 px-6 py-4 flex items-center justify-between">
+        <a href="index.html"
+            class="flex items-center text-slate-600 hover:text-sky-600 transition-colors font-bold group bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/50 shadow-sm">
+            <i class="fa-solid fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+            חזרה למאגר הקורסים
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow relative z-10 flex flex-col items-center justify-center px-4 py-8">
+
+        <article
+            class="max-w-3xl w-full bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl p-8 md:p-12 shadow-xl shadow-slate-200/50 opacity-0 animate-fade-in-up">
+            
+            <header class="flex items-center gap-5 mb-8 pb-6 border-b border-slate-200/50">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-400 to-sky-400 flex items-center justify-center text-white shadow-lg">
+                    <i class="fa-solid fa-user-graduate text-3xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-extrabold text-slate-800">קצת עליי</h1>
+                    <p class="text-slate-500 font-medium">הסיפור מאחורי מאגר הקורסים</p>
+                </div>
+            </header>
+
+            <div class="space-y-6 text-slate-700 leading-relaxed text-lg font-medium">
+                <p>
+                    קוראים לי יאיר קורצמן, סטודנט שנה שלישית באוניברסיטה הפתוחה. אני אתחיל ישר מהסוף - מהאמת ומהתכלס.
+                </p>
+                <p>
+                    אני לא מהאנשים הגאונים האלה שמקבלים מאיות במבחנים, מהאלה שתוך יומיים לומדים את כל הקורס ותוך שבוע סיימו כבר לתרגל ומוכנים למבחן. אני בדיוק ההפך.
+                </p>
+                <p>
+                    אני תלמיד ממוצע מינוס, היו לי יותר מידי נכשלים לאורך הדרך, וכל לימוד עולה לי בדם יזע ודמעות.
+                </p>
+                <p>
+                    כמובן כמו כולם יש לי המון תירוצים: מילואים, מעבר דירה פעמיים, חתונה, לידות, תירוצים אינסופיים. אבל כמו לכולם בסופו של דבר בשורה התחתונה גיליון הציונים לא משקר, והגיליון ציונים שלי הוא לא משהו.
+                </p>
+                <p>
+                    כשהגעתי לקורס שפות תכנות, הגעתי בפעם הראשונה לקורס שהוא במחילה ממי שחיבר אותו, ממש ממש על הפנים. כן, בצורה אפילו קצת קיצונית לאוניברסיטה הפתוחה. מושגים מבלבלים, שיעורים שלא ברור בכלל איך הם מתחברים אחד לשני, מבנה מבלבל, חוסר רלוונטיות, וטוב אני סתם פורק עכשיו על קורס שהוא פשוט גרוע.
+                </p>
+                <p>
+                    אבל הקורס הזה פתח לי משהו חדש. אמרתי בוא ננסה לעשות קצת סדר בכל המבנה של הקורס. התחלתי בקטנה, אמרתי נעשה סיכום, בקטנה. מפה לשם הסיכום הקטן גדל, התנפח, והפך מסיכום למדריך למידה, ממדריך למידה למדריך למידה, סיכום, והכנה למבחן, ובסוף איגוד של הכל ביחד והעלאה לאוויר בתור אתר.
+                </p>
+                <p>
+                    והאמת? זה היה ממש ממש כיף. הבנתי שכמוני, בן אדם שמבין בעזרת דרך חזותית, בעזרת עזרים ויזואלים, בעזרת סדר, והררים של טקסט ונוסחאות ומספרים פשוט גורמים לי להירדם - כנראה שיש עוד המון אנשים ככה. ומפה התחיל הפרויקט. לעבור ולנסות לקחת קורס אחרי קורס, נושא אחרי נושא, ולהפוך אותו מאוסף של מספרים משעממים, מהררי דפים שצריך לזכור בעל פה, ומבכללי משימה אחת קשה שעומדת בכל קורס - להצליח לצלוח את החומר בלי להירדם אחרי עמוד וחצי...
+                </p>
+                <p>
+                    ומהר מאוד התחילה התמכרות חדשה. אחרי שסיימתי (בסוגריים: טוב נו, לא ממש סיימתי, כבר באמצע) התחלתי לעבוד גם על הקורס מערכות הפעלה שלקחתי בסמסטר. גם פה היה אתגר שונה מהקורס שפות תכנות. הקורס דווקא היה בנוי בצורה טובה, אבל הוא הכיל פשוט כמויות של חומר שצריך לזכור בעל פה. כמויות שלי, למרות שהנושאים היו מעניינים, גרמו לי להשתעמם ולאבד את הקשב תוך רגע. ומפה לשם בניתי גם לו קורס ואתר יפה ומעודכן והכל.
+                </p>
+                <p>
+                    ומשם המשכתי למשימה הבאה, הדבר שהיה הכי קשה לי לאורך התואר: הקורסים המתמטיים. אני כותב את ההקדמה הזאת תוך כדי שאני עסוק בלכתוב אתר חדש לקורס אינפי. בעיניי זה יכול להיות בשורה ממש ודרך לימוד חדשה לעוד כנראה מאות אם לא אלפי סטודנטים כמוני. סטודנטים שאוהבים את החומר, אוהבים את התחום, אוהבים את הנושא, וגם בטוחים שהם באמת טובים, באמת יש להם מה להציע. אבל פשוט מתקשים עם מבנה הלימוד ואופן הלימוד שהקורסים מועברים בו.
+                </p>
+                <p>
+                    אני מקווה שהפרויקט הזה באמת יגדל ויצליח להשיג את המטרה שלו: עזרה לעוד סטודנטים, לעוד אנשים, ויביא באמת לימוד באופן קצת יותר כיף וקצת יותר מהנה. ממש בהצלחה בכל הקורסים!
+                </p>
+                <p class="font-bold text-sky-600 pt-4 text-xl">
+                    יאיר.
+                </p>
+            </div>
+
+        </article>
+
+    </main>
+
+</body>
+
+</html>
