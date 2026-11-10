@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl" class="h-full overflow-x-hidden">
+<html lang="he" dir="rtl" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===================================================================== -->
+    <!-- Primary Google SEO Meta Tags (קידום אורגני מוביל לאוניברסיטה הפתוחה) -->
+    <!-- ===================================================================== -->
     <title>מאגר הקורסים הראשי</title>
-    <!-- Heebo and Assistant Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Assistant:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <meta name="description" content="מאגר הקורסים והבחינות הפתוח למדעי המחשב ומתמטיקה באוניברסיטה הפתוחה: אינפי 1 ו-2, ליניארית 1 ו-2, שפות תכנות, OOP, מודלים חישוביים, בינה מלאכותית, מערכות הפעלה, רשתות וסייבר. סיכומים מקיפים, מבחנים פתורים ב-3 שכבות וסימולטורים אינטראקטיביים חינמיים.">
+    <meta name="keywords" content="האוניברסיטה הפתוחה, מדעי המחשב, מבחנים פתורים, אינפי 1 20474, ליניארית 1 20109, שפות תכנות 20905, תכנות מונחה עצמים 20906, מודלים חישוביים 20604, בינה מלאכותית 20551, מערכות הפעלה 20594, רשתות תקשורת 20948, אבטחת המרחב המקוון 20940, אינפי 2 20475, ליניארית 2 20229, יאיר קורצמן, סיכומי קורסים, סימולטורים אינטראקטיביים">
+    <meta name="author" content="יאיר קורצמן (Yair Kurtzman)">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://all-the-courses.pages.dev/">
+
+    <!-- Favicon (איקון אקדמי יוקרתי בתוצאות החיפוש של גוגל) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284c7'%3E%3Cpath d='M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z'/%3E%3C/svg%3E">
+
+    <!-- Open Graph / WhatsApp / Facebook Preview Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="he_IL">
+    <meta property="og:site_name" content="כל קורסי העזר שלי — האוניברסיטה הפתוחה">
+    <meta property="og:title" content="כל קורסי העזר שלי — אתרי עזר, מבחנים פתורים וסיכומים | יאיר קורצמן">
+    <meta property="og:description" content="מאגר הקורסים והבחינות הפתוח לתלמידי מדעי המחשב ומתמטיקה באו&quot;פ: סיכומי עומק, מבחנים מלאים פתורים ב-3 שכבות וסימולטורים אינטראקטיביים חינם.">
+    <meta property="og:url" content="https://all-the-courses.pages.dev/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="כל קורסי העזר שלי | האוניברסיטה הפתוחה - יאיר קורצמן">
+    <meta name="twitter:description" content="מאגר הקורסים והבחינות הפתוח לתלמידי מדעי המחשב: מבחנים פתורים ב-3 שכבות וסימולטורים אינטראקטיביים.">
+
+    <!-- Heebo and Assistant Google Fonts (זהה ל-https://all-the-courses.pages.dev/) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -53,8 +81,373 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Structured Data (Schema.org JSON-LD: WebSite, Person, EducationalOrganization, ItemList of 11 Courses, BreadcrumbList, FAQPage) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://all-the-courses.pages.dev/#website",
+      "url": "https://all-the-courses.pages.dev/",
+      "name": "כל קורסי העזר שלי — אתרי עזר, מבחנים פתורים וסיכומים למדעי המחשב | יאיר קורצמן",
+      "description": "מאגר הקורסים והבחינות הפתוח למדעי המחשב ומתמטיקה באוניברסיטה הפתוחה: אינפי 1 ו-2, ליניארית 1 ו-2, שפות תכנות, OOP, מודלים חישוביים, בינה מלאכותית, מערכות הפעלה, רשתות וסייבר. סיכומים מקיפים, מאגרי בחינות פתורים ב-3 שכבות וסימולטורים אינטראקטיביים.",
+      "inLanguage": "he-IL",
+      "author": {
+        "@id": "https://all-the-courses.pages.dev/#person"
+      },
+      "publisher": {
+        "@id": "https://all-the-courses.pages.dev/#person"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://all-the-courses.pages.dev/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://all-the-courses.pages.dev/#person",
+      "name": "יאיר קורצמן",
+      "alternateName": "Yair Kurtzman",
+      "jobTitle": "מפתח תוכנה ויוצר מאגר הקורסים הפתוח למדעי המחשב באו\"פ",
+      "knowsAbout": [
+        "Computer Science",
+        "Operating Systems",
+        "Programming Languages",
+        "Artificial Intelligence",
+        "Calculus",
+        "Linear Algebra",
+        "Cyber Security"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "האוניברסיטה הפתוחה"
+      },
+      "url": "https://all-the-courses.pages.dev/about.html",
+      "sameAs": [
+        "https://linkedin.com/in/yair-kurtzman-382417247",
+        "https://wa.me/972586736525"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://all-the-courses.pages.dev/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "דף הבית",
+          "item": "https://all-the-courses.pages.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "כל קורסי העזר",
+          "item": "https://all-the-courses.pages.dev/#courses"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://all-the-courses.pages.dev/#courselist",
+      "name": "מאגר קורסי מדעי המחשב ומתמטיקה - האוניברסיטה הפתוחה",
+      "numberOfItems": 11,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Course",
+            "name": "חשבון אינפיניטסימלי 1 (20474) - האוניברסיטה הפתוחה",
+            "courseCode": "20474",
+            "description": "שפת אפסילון-דלתא, גבולות, רציפות, נגזרות, אינטגרלים וטורים. סימולציות אינטראקטיביות, תרגול ומבחנים.",
+            "url": "https://infi-1.pages.dev",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Course",
+            "name": "אלגברה ליניארית 1 (20109) - האוניברסיטה הפתוחה",
+            "courseCode": "20109",
+            "description": "מערכות משוואות ליניאריות, דירוג מטריצות, מרחבים וקטוריים, בסיס וממד, העתקות ליניאריות ודטרמיננטות.",
+            "url": "https://linear1.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Course",
+            "name": "חשבון אינפי 2 (20475) - האוניברסיטה הפתוחה",
+            "courseCode": "20475",
+            "description": "טורי פונקציות והתכנסות במידה שווה (במ\"ש), אינטגרלים מוכללים, פונקציות בכמה משתנים ואינטגרלים כפולים.",
+            "url": "https://all-the-courses.pages.dev/#math-20475",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Course",
+            "name": "אלגברה ליניארית 2 (20229) - האוניברסיטה הפתוחה",
+            "courseCode": "20229",
+            "description": "ערכים עצמיים ווקטורים עצמיים, לכסון מטריצות, מרחבי מכפלה פנימית, אופרטורים צמודים וצורת ז'ורדן.",
+            "url": "https://all-the-courses.pages.dev/#math-20229",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Course",
+            "name": "שפות תכנות (20905) - האוניברסיטה הפתוחה",
+            "courseCode": "20905",
+            "description": "מאגר פתרונות מסודר, שאלות משנים קודמות והכנה לבחינה בחלוקה לפי נושאים.",
+            "url": "https://summary-of-programming-languages.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Course",
+            "name": "תכנות מונחה עצמים (20906) - האוניברסיטה הפתוחה",
+            "courseCode": "20906",
+            "description": "עקרונות Pure OOP, שפת Smalltalk וסביבת Squeak, היררכיית מחלקות, מעקבי Dispatch ומבחנים.",
+            "url": "https://object-oriented-programming.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Course",
+            "name": "מודלים חישוביים (20604) - האוניברסיטה הפתוחה",
+            "courseCode": "20604",
+            "description": "אוטומטים, שפות רגולריות, מכונות טיורינג, כריעות וסיבוכיות. סיכומים ותרגול אינטראקטיבי.",
+            "url": "https://computational-models.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Course",
+            "name": "מערכות הפעלה (20594) - האוניברסיטה הפתוחה",
+            "courseCode": "20594",
+            "description": "סיכומים מקיפים, תרגול שאלות אמריקאיות, מבחנים מלאים ומדריכים להצלחה בבחינה.",
+            "url": "https://operating-system-5l3.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Course",
+            "name": "רשתות תקשורת מחשבים (20948) - האוניברסיטה הפתוחה",
+            "courseCode": "20948",
+            "description": "מודל השכבות Top-Down, פרוטוקולי אינטרנט, TCP/UDP, ניתוב, מתגים, סימולציות טופולוגיה ומבחנים.",
+            "url": "https://communication-networks.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "Course",
+            "name": "מבוא לאבטחת המרחב המקוון (20940) - האוניברסיטה הפתוחה",
+            "courseCode": "20940",
+            "description": "יסודות אבטחת מידע, קריפטוגרפיה, הגנת רשתות, ניתוח חולשות, קוד בטוח וסימולציות.",
+            "url": "https://introduction-to-cybersecurity.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "Course",
+            "name": "מבוא לבינה מלאכותית (20551) - האוניברסיטה הפתוחה",
+            "courseCode": "20551",
+            "description": "סוכנים תבוניים, חיפוש יוריסטי ומשחקים (A*, Minimax), סיפוק אילוצים ולמידת מכונה.",
+            "url": "https://introduction-to-artificial-intelligence.pages.dev/",
+            "isAccessibleForFree": true,
+            "inLanguage": "he",
+            "provider": {
+              "@type": "CollegeOrUniversity",
+              "name": "האוניברסיטה הפתוחה"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ILS",
+              "category": "Free Educational Resource"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://all-the-courses.pages.dev/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "איך נוצרו אתרי מאגרי הבחינות? (AI משולב סקירה ודיוק אנושי)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "כל אתר נבנה בשלבים רבים תוך סינרגיה בין מודלי בינה מלאכותית מתקדמים לבין סקירה מעמיקה של מבחני אמת מהשנים האחרונות. כל פתרון עובר אימות, זיקוק נוסחאות ובדיקה כפולה מול דרישות הקורס הרשמיות באוניברסיטה הפתוחה."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "האם האתרים פתוחים ובחינם לכל הסטודנטים?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "כן, בחינם לחלוטין! המטרה היא להנגיש מאגרי בחינות פתורים, סימולטורים אינטראקטיביים וסיכומי עומק לכל תלמיד באוניברסיטה הפתוחה ללא כל הרשמה או תשלום."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "מהי שיטת הפתרון ב-3 שכבות?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "שיטה ייחודית שמונעת תלות בפתרונות מוכנים ומאמנת לחשיבה עצמאית: שכבה 1 (אינטואיציה וכיוון לוגי), שכבה 2 (רמז הדרכתי ואלגוריתם מוביל), ושכבה 3 (פתרון פורמלי מלא ברמת 100 בבחינה)."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <!-- Custom CSS (זהה ל-https://all-the-courses.pages.dev/) -->
     <style>
         body {
             background-color: #f4f7fb;
@@ -83,406 +476,991 @@
                 opacity: 0;
                 transform: translateY(15px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-        .delay-100 {
-            animation-delay: 100ms;
+        /* Filter Pills Active */
+        .filter-pill.active {
+            background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+            color: #ffffff !important;
+            border-color: transparent !important;
+            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+        }
+        .filter-pill.active .badge-count {
+            background-color: rgba(255, 255, 255, 0.25) !important;
+            color: #ffffff !important;
         }
 
-        .delay-200 {
-            animation-delay: 200ms;
-        }
-
-        .delay-300 {
-            animation-delay: 300ms;
-        }
-
-        .delay-400 {
-            animation-delay: 400ms;
-        }
-
-        .delay-500 {
-            animation-delay: 500ms;
-        }
-
-        .delay-600 {
-            animation-delay: 600ms;
-        }
-
-        .delay-700 {
-            animation-delay: 700ms;
-        }
-
-        .delay-800 {
-            animation-delay: 800ms;
-        }
-
-        .delay-900 {
-            animation-delay: 900ms;
-        }
-
-        /* Custom scrollbar for main page */
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
+            height: 6px;
         }
-
         ::-webkit-scrollbar-track {
             background: #f1f5f9;
         }
-
         ::-webkit-scrollbar-thumb {
             background: #cbd5e1;
             border-radius: 5px;
         }
-
         ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
+        }
+
+        @keyframes modalPop {
+            0% { opacity: 0; transform: scale(0.95) translateY(12px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .animate-modal-pop {
+            animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Hide horizontal scrollbar in filters bar */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
 
-<body class="text-textMain min-h-screen relative flex flex-col overflow-y-auto">
+<body class="min-h-screen text-slate-700 relative overflow-x-hidden flex flex-col font-sans">
 
-    <!-- Background lighting blobs (highly visible for glassmorphism) -->
-    <div
-        class="absolute top-0 right-[-10%] w-96 h-96 bg-sky-300/30 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0">
-    </div>
-    <div class="absolute bottom-[20%] left-[-10%] w-80 h-80 bg-indigo-300/25 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0"
-        style="animation-delay: 2s;"></div>
-    <div class="absolute top-[40%] left-[20%] w-72 h-72 bg-pink-300/15 rounded-full filter blur-[90px] animate-blob pointer-events-none z-0"
-        style="animation-delay: 4s;"></div>
+    <!-- ============================================================= -->
+    <!-- בועות זוהרות מונפשות ברקע (Animated Blobs "הריקוד שיש לו") -->
+    <!-- ============================================================= -->
+    <div class="absolute top-0 right-[-10%] w-96 h-96 bg-sky-300/30 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0"></div>
+    <div class="absolute bottom-[20%] left-[-10%] w-80 h-80 bg-indigo-300/25 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0" style="animation-delay: 2s;"></div>
+    <div class="absolute top-[40%] left-[20%] w-72 h-72 bg-pink-300/15 rounded-full filter blur-[90px] animate-blob pointer-events-none z-0" style="animation-delay: 4s;"></div>
 
-    <!-- New Top Bar -->
-    <header
-        class="relative z-50 px-6 py-4 flex flex-col md:flex-row items-center justify-start bg-white/40 backdrop-blur-md border-b border-white/30 shadow-sm gap-4">
-        <div class="text-right text-slate-700 font-medium text-sm leading-relaxed">
-            ברוכים הבאים לאתר הקורסים הראשי, כאן נמצאים הקורסים הקיימים כבר, קורסים עתידיים, וקורסים שבעזרת השם יפתחו
-            בהמשך, בהצלחה בלימוד :)
+    <!-- ============================================================= -->
+    <!-- רצועה עליונה (Header): 2 שורות מוקפדות בלבד שלא תופסות מקום -->
+    <!-- ============================================================= -->
+    <header class="relative z-50 px-4 sm:px-6 py-3 bg-white/40 backdrop-blur-md border-b border-white/30 shadow-sm">
+        <div class="max-w-[1700px] mx-auto flex flex-col gap-2.5">
+            
+            <!-- שורה 1: "ברוכים הבאים לכל קורסי העזר שלי" + המשך, ואחריהם 4 סמלים עגולים -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                
+                <!-- כותרת ראשית מדויקת לפי בקשת המשתמש (H1 עבור אינדוקס SEO מוביל) -->
+                <h1 class="text-right text-slate-700 font-medium text-xs sm:text-sm md:text-base leading-snug font-sans flex-1">
+                    ברוכים הבאים לכל קורסי העזר שלי — אתרי עזר אינטראקטיביים לאוניברסיטה הפתוחה שנוצרו על ידי&nbsp;<span class="font-bold text-slate-900">יאיר קורצמן</span>. מוזמנים להיכנס, ללמוד, ליהנות ולשתף 🙂
+                </h1>
+
+                <!-- 4 סמלים עגולים בלבד (ללא טקסט) ישירות בהמשך השורה -->
+                <div class="flex items-center gap-2 shrink-0">
+                    <!-- קצת עליי -->
+                    <a href="about.html"
+                       title="קצת עליי — יאיר קורצמן"
+                       aria-label="קצת עליי"
+                       class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/50 hover:bg-white text-indigo-600 border border-white/80 shadow-sm flex items-center justify-center transition-all hover:scale-110 hover:shadow-md">
+                        <i class="fa-solid fa-user text-xs sm:text-sm"></i>
+                    </a>
+
+                    <!-- שאלות נפוצות -->
+                    <button type="button"
+                            onclick="openModal('modal-faq')"
+                            title="שאלות נפוצות ודיוקים"
+                            aria-label="שאלות נפוצות"
+                            class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/50 hover:bg-white text-amber-500 border border-white/80 shadow-sm flex items-center justify-center transition-all hover:scale-110 hover:shadow-md cursor-pointer">
+                        <i class="fa-solid fa-circle-question text-sm sm:text-base"></i>
+                    </button>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/972586736525"
+                       target="_blank"
+                       rel="noopener"
+                       title="פנייה בוואטסאפ"
+                       aria-label="וואטסאפ"
+                       class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/50 hover:bg-white text-emerald-600 border border-white/80 shadow-sm flex items-center justify-center transition-all hover:scale-110 hover:shadow-md">
+                        <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/yair-kurtzman-382417247"
+                       target="_blank"
+                       rel="noopener"
+                       title="פרופיל לינקדאין"
+                       aria-label="לינקדאין"
+                       class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/50 hover:bg-white text-sky-600 border border-white/80 shadow-sm flex items-center justify-center transition-all hover:scale-110 hover:shadow-md">
+                        <i class="fa-brands fa-linkedin-in text-xs sm:text-base"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- שורה 2: כל עיגולי וכפתורי הסינון בשורה אחת במרכז שלא תופסת מקום -->
+            <nav aria-label="סינון קורסים" class="w-full flex items-center justify-center pt-1 border-t border-white/30">
+                <div class="w-full flex items-center justify-between gap-2 overflow-x-auto no-scrollbar py-0.5">
+                    
+                    <!-- כפתורי הסינון העגולים / גלולתיים במרכז -->
+                    <div class="flex items-center gap-1.5 flex-nowrap shrink-0 mx-auto sm:mx-0">
+                        
+                        <!-- כל הקורסים -->
+                        <button type="button" onclick="filterCourses('all', this)"
+                            class="filter-pill active text-xs font-bold px-3 py-1.5 rounded-full transition-all shadow-sm shrink-0 cursor-pointer flex items-center gap-1">
+                            <span>כל הקורסים</span>
+                            <span class="badge-count px-1.5 py-0.2 text-[10px] bg-slate-100/30 rounded-full font-black">11</span>
+                        </button>
+
+                        <!-- מתמטיקה -->
+                        <button type="button" onclick="filterCourses('math', this)"
+                            class="filter-pill text-xs font-bold px-3 py-1.5 rounded-full bg-white/45 hover:bg-white/80 text-rose-900 border border-white/60 transition-all flex items-center gap-1 shadow-sm shrink-0 cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+                            <span>מתמטיקה</span>
+                            <span class="badge-count px-1.5 py-0.2 text-[10px] bg-rose-100 rounded-full font-black text-rose-900">4</span>
+                        </button>
+
+                        <!-- שפות תכנות -->
+                        <button type="button" onclick="filterCourses('programming', this)"
+                            class="filter-pill text-xs font-bold px-3 py-1.5 rounded-full bg-white/45 hover:bg-white/80 text-sky-900 border border-white/60 transition-all flex items-center gap-1 shadow-sm shrink-0 cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                            <span>שפות תכנות</span>
+                            <span class="badge-count px-1.5 py-0.2 text-[10px] bg-sky-100 rounded-full font-black text-sky-900">2</span>
+                        </button>
+
+                        <!-- מדעים מדויקים ו-AI -->
+                        <button type="button" onclick="filterCourses('ai', this)"
+                            class="filter-pill text-xs font-bold px-3 py-1.5 rounded-full bg-white/45 hover:bg-white/80 text-amber-900 border border-white/60 transition-all flex items-center gap-1 shadow-sm shrink-0 cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                            <span>מדעים מדויקים ו-AI</span>
+                            <span class="badge-count px-1.5 py-0.2 text-[10px] bg-amber-100 rounded-full font-black text-amber-900">2</span>
+                        </button>
+
+                        <!-- מערכות וסייבר -->
+                        <button type="button" onclick="filterCourses('systems', this)"
+                            class="filter-pill text-xs font-bold px-3 py-1.5 rounded-full bg-white/45 hover:bg-white/80 text-emerald-900 border border-white/60 transition-all flex items-center gap-1 shadow-sm shrink-0 cursor-pointer">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            <span>מערכות וסייבר</span>
+                            <span class="badge-count px-1.5 py-0.2 text-[10px] bg-emerald-100 rounded-full font-black text-emerald-900">3</span>
+                        </button>
+
+                        <span class="hidden md:inline-block w-px h-4 bg-slate-300/70 mx-0.5 shrink-0"></span>
+
+                        <!-- רמה מתקדמת -->
+                        <button type="button" onclick="filterCourses('level-advanced', this)"
+                            title="קורסים המעניקים נקודות זכות מתקדמות"
+                            class="filter-pill text-xs font-bold px-3 py-1.5 rounded-full bg-white/45 hover:bg-white/80 text-purple-900 border border-white/60 transition-all flex items-center gap-1 shadow-sm shrink-0 cursor-pointer">
+                            <i class="fa-solid fa-graduation-cap text-[10px]"></i>
+                            <span>רמה מתקדמת</span>
+                            <span class="badge-count px-1.5 py-0.2 text-[10px] bg-purple-100 rounded-full font-black text-purple-900">7</span>
+                        </button>
+
+                        <!-- רמה רגילה -->
+                        <button type="button" onclick="filterCourses('level-basic', this)"
+                            title="קורסי תשתית ויסודות ברמה רגילה"
+                            class="filter-pill text-xs font-bold px-3 py-1.5 rounded-full bg-white/45 hover:bg-white/80 text-slate-800 border border-white/60 transition-all flex items-center gap-1 shadow-sm shrink-0 cursor-pointer">
+                            <span>רמה רגילה</span>
+                            <span class="badge-count px-1.5 py-0.2 text-[10px] bg-slate-200 rounded-full font-black text-slate-700">4</span>
+                        </button>
+                    </div>
+
+                    <!-- תיבת חיפוש אלגנטית באותה שורה -->
+                    <div class="relative min-w-[150px] sm:min-w-[200px] shrink-0">
+                        <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-[11px] pointer-events-none"></i>
+                        <input id="course-search-input"
+                               type="search"
+                               oninput="handleSearchInput(this.value)"
+                               placeholder="חיפוש קורס או מספר..."
+                               aria-label="חיפוש קורס"
+                               class="w-full pr-8 pl-3 py-1 rounded-full bg-white/70 focus:bg-white border border-white/80 focus:border-sky-400 focus:outline-none text-xs font-medium text-slate-700 placeholder:text-slate-400 shadow-inner transition-all font-sans">
+                    </div>
+
+                </div>
+            </nav>
+
         </div>
     </header>
 
-    <!-- Main Container -->
-    <main class="flex-grow relative z-10 flex flex-col">
+    <!-- ============================================================= -->
+    <!-- Main Content & Cards Grid (מופיע ישירות בהתחלה בלי תפיסת מקום) -->
+    <!-- ============================================================= -->
+    <main class="flex-grow relative z-10 flex flex-col" id="courses">
+        <section class="view-container active flex-col items-start justify-start py-5 px-4 sm:px-6 w-full mb-10 max-w-[1700px] mx-auto" id="view-dashboard">
 
-        <section id="view-dashboard"
-            class="view-container active flex-col items-start justify-start py-8 px-6 w-full mb-[30vh]">
+            <!-- כותרת מוסתרת סמנטית לסריקת Google בלבד (H2 Semantic Outline) -->
+            <h2 class="sr-only">קטלוג קורסי מדעי המחשב והמתמטיקה באוניברסיטה הפתוחה</h2>
 
-            <!-- Cards Grid (smaller, aligned right) -->
-            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            <!-- Cards Grid: 5 columns (xl:grid-cols-5) showing all 11 courses cleanly -->
+            <div id="courses-grid" class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5">
 
-                <a href="https://operating-system-5l3.pages.dev/"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-sky-400/40 hover:to-indigo-500/40 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-sky-300/30 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-100 cursor-pointer">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-sky-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+                <!-- חשבון אינפיניטסימלי 1 (#20474) -->
+                <article
+                    data-course-card="true"
+                    data-category="math"
+                    data-level="level-basic"
+                    data-status="active"
+                    data-search="חשבון אינפיניטסימלי 1 אינפי 1 20474 אפסילון דלתא גבולות נגזרות אינטגרלים טורים מתמטיקה רמה רגילה 6 נז"
+                    onclick="handleCardClick('https://infi-1.pages.dev', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-rose-500/40 hover:to-pink-500/40 hover:shadow-rose-400/35 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-rose-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 576 512">
+                            <path d="M282.6 78.1c8-27.3 33-46.1 61.4-46.1l200 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L344 96 238.7 457c-3.6 12.3-14.1 21.2-26.8 22.8s-25.1-4.6-31.5-15.6L77.6 288 32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l45.6 0c22.8 0 43.8 12.1 55.3 31.8l65.2 111.8L282.6 78.1zM393.4 233.4c12.5-12.5 32.8-12.5 45.3 0L480 274.7l41.4-41.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 320l41.4 41.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 365.3l-41.4 41.4c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L434.7 320l-41.4-41.4c-12.5-12.5-12.5-32.8 0-45.3z"></path>
                         </svg>
 
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-sky-600 group-hover:bg-gradient-to-br group-hover:from-sky-400 group-hover:to-indigo-500 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-sky-200 shadow-inner">
-                                <i class="fa-solid fa-server text-xl"></i>
-                            </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-sky-50 group-hover:text-sky-700 group-hover:border-sky-200 transition-colors">פעיל
-                            </span>
-                        </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-sky-600 transition-colors relative z-10 font-sans leading-tight">
-                            מערכות הפעלה</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
-                            סיכומים מקיפים, תרגול שאלות אמריקאיות, מבחנים מלאים ומדריכים להצלחה בבחינה.
-                        </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-sky-600 transition-colors duration-300 relative z-10 font-sans">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://summary-of-programming-languages.pages.dev/"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-emerald-400/40 hover:to-teal-500/40 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-300/30 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-200 cursor-pointer font-sans">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-emerald-50 opacity-20 group-hover:opacity-40 group-hover:rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 11.9 12 12.5 12 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H5c0-3.87 3.13-7 7-7s7 3.13 7 7c0 1.11-.45 2.12-1.17 2.85z" />
-                        </svg>
-
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-emerald-600 group-hover:bg-gradient-to-br group-hover:from-emerald-400 group-hover:to-teal-500 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-emerald-200 shadow-inner">
-                                <i class="fa-solid fa-code text-xl"></i>
-                            </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-emerald-50 group-hover:text-emerald-700 group-hover:border-emerald-200 transition-colors">פעיל
-                            </span>
-                        </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-emerald-600 transition-colors relative z-10 font-sans leading-tight">
-                            שפות תכנות</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
-                            מאגר פתרונות מסודר, שאלות משנים קודמות והכנה לבחינה בחלוקה לפי נושאים.
-                        </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-emerald-600 transition-colors duration-300 relative z-10 font-bold">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://computational-models.pages.dev/"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-violet-400/40 hover:to-fuchsia-500/40 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-violet-300/30 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-300 cursor-pointer font-sans">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-violet-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
-                        </svg>
-
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-violet-600 group-hover:bg-gradient-to-br group-hover:from-violet-400 group-hover:to-fuchsia-500 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-violet-200 shadow-inner">
-                                <i class="fa-solid fa-infinity text-xl"></i>
-                            </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-violet-50 group-hover:text-violet-700 group-hover:border-violet-200 transition-colors">פעיל</span>
-                        </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-violet-600 transition-colors relative z-10 font-sans leading-tight">
-                            מודלים חישוביים</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
-                            אוטומטים, שפות רגולריות, מכונות טיורינג, כריעות וסיבוכיות. סיכומים ותרגול אינטראקטיבי.
-                        </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-violet-600 transition-colors duration-300 relative z-10 font-bold font-sans">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://introduction-to-cybersecurity.pages.dev/"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-emerald-400/35 hover:to-teal-400/35 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-200/40 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-400 cursor-pointer font-sans">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-emerald-50 opacity-20 group-hover:opacity-40 group-hover:rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
-                        </svg>
-
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-emerald-600 group-hover:bg-gradient-to-br group-hover:from-emerald-400 group-hover:to-teal-500 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-emerald-200 shadow-inner">
-                                <i class="fa-solid fa-shield-halved text-xl"></i>
-                            </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-emerald-50 group-hover:text-emerald-700 group-hover:border-emerald-200 transition-colors">פעיל</span>
-                        </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-emerald-600 transition-colors relative z-10 font-sans leading-tight">
-                            מבוא לאבטחת המרחב המקוון</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
-                            יסודות אבטחת מידע, קריפטוגרפיה, הגנת רשתות, ניתוח חולשות, קוד בטוח וסימולציות.
-                        </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-emerald-600 transition-colors duration-300 relative z-10 font-bold font-sans">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://introduction-to-artificial-intelligence.pages.dev/"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-amber-400/40 hover:to-orange-500/40 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-amber-300/30 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-500 cursor-pointer font-sans">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-amber-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h2a3 3 0 0 1 3 3v1h1.28c.34-.6 1-.1 1.72-1a2 2 0 1 1 0 4c-.72 0-1.38-.4-1.72-1H18v2h1.28c.34-.6 1-.1 1.72-1a2 2 0 1 1 0 4c-.72 0-1.38-.4-1.72-1H18v1a3 3 0 0 1-3 3h-2v1.28c.6.34 1 1 1 1.72a2 2 0 1 1-4 0c0-.72.4-1.38 1-1.72V19H9a3 3 0 0 1-3-3v-1H4.72c-.34.6-1 .1-1.72 1a2 2 0 1 1 0-4c.72 0 1.38.4 1.72 1H6v-2H4.72c-.34.6-1 .1-1.72 1a2 2 0 1 1 0-4c.72 0 1.38.4 1.72 1H6V10a3 3 0 0 1 3-3h2V5.72c-.6-.34-1-1-1-1.72a2 2 0 0 1 2-2zM9 9a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H9z" />
-                        </svg>
-
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-amber-600 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-orange-500 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-amber-200 shadow-inner">
-                                <i class="fa-solid fa-brain text-xl"></i>
-                            </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-amber-50 group-hover:text-amber-700 group-hover:border-amber-200 transition-colors">פעיל</span>
-                        </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-amber-600 transition-colors relative z-10 font-sans leading-tight">
-                            מבוא לבינה מלאכותית</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
-                            סוכנים תבוניים, חיפוש יוריסטי ומשחקים (A*, Minimax), סיפוק אילוצים ולמידת מכונה.
-                        </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-amber-600 transition-colors duration-300 relative z-10 font-bold font-sans">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://communication-networks.pages.dev/"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-blue-500/40 hover:to-cyan-400/40 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-blue-400/35 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-600 cursor-pointer font-sans">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-blue-50 opacity-20 group-hover:opacity-40 group-hover:rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M17 16h-4v-3h1a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1v3H7a3 3 0 0 0-3 3v2h2v-2a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2h2v-2a3 3 0 0 0-3-3zM10 5h4v6h-4V5z" />
-                        </svg>
-
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-blue-600 group-hover:bg-gradient-to-br group-hover:from-blue-500 group-hover:to-cyan-400 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-blue-300 shadow-inner">
-                                <i class="fa-solid fa-network-wired text-xl"></i>
-                            </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-blue-50 group-hover:text-blue-700 group-hover:border-blue-200 transition-colors">פעיל</span>
-                        </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-blue-600 transition-colors relative z-10 font-sans leading-tight">
-                            רשתות תקשורת מחשבים</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
-                            מודל השכבות Top-Down, פרוטוקולי אינטרנט, TCP/UDP, ניתוב, מתגים, סימולציות טופולוגיה ומבחנים.
-                        </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-blue-600 transition-colors duration-300 relative z-10 font-bold font-sans">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://object-oriented-programming.pages.dev/"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-purple-500/40 hover:to-fuchsia-500/40 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-purple-400/35 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-700 cursor-pointer font-sans">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-purple-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12 1.5l9 5.2v10.6l-9 5.2-9-5.2V6.7l9-5.2zm0 2.3L5.2 8.3 12 12.2l6.8-3.9L12 3.8zm-7.5 6.1v8.4l7 4v-8.4l-7-4zm15 0l-7 4v8.4l7-4v-8.4z" />
-                        </svg>
-
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-purple-600 group-hover:bg-gradient-to-br group-hover:from-purple-500 group-hover:to-fuchsia-500 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-purple-300 shadow-inner">
-                                <i class="fa-solid fa-cubes text-xl"></i>
-                            </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-purple-50 group-hover:text-purple-700 group-hover:border-purple-200 transition-colors">פעיל</span>
-                        </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-purple-600 transition-colors relative z-10 font-sans leading-tight">
-                            תכנות מונחה עצמים</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
-                            עקרונות Pure OOP, שפת Smalltalk וסביבת Squeak, היררכיית מחלקות, מעקבי Dispatch ומבחנים.
-                        </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-purple-600 transition-colors duration-300 relative z-10 font-bold font-sans">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://infi-1.pages.dev"
-                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-rose-500/40 hover:to-pink-500/40 rounded-[24px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:shadow-rose-400/35 hover:-translate-y-2 hover:scale-[1.02] opacity-0 animate-fade-in-up delay-800 cursor-pointer font-sans">
-                    <div
-                        class="bg-white/15 backdrop-blur-xl rounded-[22px] p-5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)]">
-                        <svg class="absolute bottom-[-5%] left-[-5%] w-32 h-32 text-rose-50 opacity-20 group-hover:opacity-40 group-hover:rotate-12 transition-all duration-700 pointer-events-none z-0"
-                            fill="currentColor" viewBox="0 0 576 512">
-                            <path
-                                d="M282.6 78.1c8-27.3 33-46.1 61.4-46.1l200 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L344 96 238.7 457c-3.6 12.3-14.1 21.2-26.8 22.8s-25.1-4.6-31.5-15.6L77.6 288 32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l45.6 0c22.8 0 43.8 12.1 55.3 31.8l65.2 111.8L282.6 78.1zM393.4 233.4c12.5-12.5 32.8-12.5 45.3 0L480 274.7l41.4-41.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L525.3 320l41.4 41.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L480 365.3l-41.4 41.4c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L434.7 320l-41.4-41.4c-12.5-12.5-12.5-32.8 0-45.3z" />
-                        </svg>
-
-                        <div class="flex items-start justify-between mb-3 relative z-10">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-rose-600 group-hover:bg-gradient-to-br group-hover:from-rose-500 group-hover:to-pink-500 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-rose-300 shadow-inner">
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-rose-600 group-hover:bg-gradient-to-br group-hover:from-rose-500 group-hover:to-pink-500 group-hover:shadow-rose-300 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
                                 <i class="fa-solid fa-square-root-variable text-xl"></i>
                             </div>
-                            <span
-                                class="bg-white/10 border border-white/20 text-[10px] px-2.5 py-1 rounded-full text-slate-700 font-bold tracking-wide group-hover:bg-rose-50 group-hover:text-rose-700 group-hover:border-rose-200 transition-colors">פעיל</span>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
                         </div>
-                        <h2
-                            class="text-lg font-bold text-slate-800 mb-1.5 group-hover:text-rose-600 transition-colors relative z-10 font-sans leading-tight">
-                            חשבון אינפיניטסימלי 1</h2>
-                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans">
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-rose-600 transition-colors relative z-10 font-sans leading-tight">
+                            חשבון אינפיניטסימלי 1
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
                             שפת אפסילון-דלתא, גבולות, רציפות, נגזרות, אינטגרלים וטורים. סימולציות אינטראקטיביות, תרגול ומבחנים.
                         </p>
-                        <div
-                            class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-rose-600 transition-colors duration-300 relative z-10 font-bold font-sans">
-                            כניסה לקורס
-                            <i
-                                class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i>
-                        </div>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-rose-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
                     </div>
-                </a>
+                </article>
+
+                <!-- אלגברה ליניארית 1 (#20109) -->
+                <article
+                    data-course-card="true"
+                    data-category="math"
+                    data-level="level-basic"
+                    data-status="active"
+                    data-search="מתמטיקה ליניארית 1 אלגברה ליניארית 1 20109 מטריצות מרחבים וקטוריים דטרמיננטות בסיס וממד מתמטיקה רמה רגילה 6 נז"
+                    onclick="handleCardClick('https://linear1.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-rose-500/40 hover:to-pink-500/40 hover:shadow-rose-400/35 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-rose-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v4h4V5H5zm6 0v4h4V5h-4zm6 0v4h4V5h-4zM5 11v4h4v-4H5zm6 0v4h4v-4h-4zm6 0v4h4v-4h-4zM5 17v2h4v-2H5zm6 0v2h4v-2h-4zm6 0v2h4v-2h-4z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-rose-600 group-hover:bg-gradient-to-br group-hover:from-rose-500 group-hover:to-pink-500 group-hover:shadow-rose-300 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-table-cells text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-rose-600 transition-colors relative z-10 font-sans leading-tight">
+                            אלגברה ליניארית 1
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            מערכות משוואות ליניאריות, דירוג מטריצות, מרחבים וקטוריים, בסיס וממד, העתקות ליניאריות ודטרמיננטות.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-rose-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- חשבון אינפי 2 (#20475) -->
+                <article
+                    data-course-card="true"
+                    data-category="math"
+                    data-level="level-basic"
+                    data-status="inactive"
+                    data-search="חשבון אינפי 2 אינפיניטסימלי 2 20475 טורי פונקציות התכנסות במידה שווה אינטגרלים מוכללים מתמטיקה רמה רגילה 7 נז לא פעיל"
+                    onclick="handleInactiveCard('חשבון אינפי 2')"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-rose-500/35 hover:to-pink-500/35 hover:shadow-rose-400/25 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans opacity-90 hover:opacity-100">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-rose-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-4H6v-2h4V7h2v4h4v2h-4v4z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-rose-600 group-hover:bg-gradient-to-br group-hover:from-rose-500 group-hover:to-pink-500 group-hover:shadow-rose-300 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-infinity text-xl"></i>
+                            </div>
+                            <span class="bg-rose-500/15 border border-rose-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-rose-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-rose-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 inline-block"></span> בקרוב</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-rose-600 transition-colors relative z-10 font-sans leading-tight">
+                            חשבון אינפי 2
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            טורי פונקציות והתכנסות במידה שווה (במ"ש), אינטגרלים מוכללים, פונקציות בכמה משתנים ואינטגרלים כפולים.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-rose-700/80 group-hover:text-rose-600 transition-colors duration-300 relative z-10 font-sans">בפיתוח — יעלה בקרוב<i class="fa-solid fa-clock mr-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- אלגברה ליניארית 2 (#20229) -->
+                <article
+                    data-course-card="true"
+                    data-category="math"
+                    data-level="level-basic"
+                    data-status="inactive"
+                    data-search="אלגברה ליניארית 2 20229 ערכים עצמיים וקטורים עצמיים לכסון מכפלה פנימית צורת זורדן מתמטיקה רמה רגילה 5 נז לא פעיל"
+                    onclick="handleInactiveCard('אלגברה ליניארית 2')"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-rose-500/35 hover:to-pink-500/35 hover:shadow-rose-400/25 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans opacity-90 hover:opacity-100">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-rose-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 3v18h18V3H3zm16 16H5V5h14v14zM7 7h3v3H7V7zm7 7h3v3h-3v-3z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-rose-600 group-hover:bg-gradient-to-br group-hover:from-rose-500 group-hover:to-pink-500 group-hover:shadow-rose-300 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-shapes text-xl"></i>
+                            </div>
+                            <span class="bg-rose-500/15 border border-rose-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-rose-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-rose-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 inline-block"></span> בקרוב</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-rose-600 transition-colors relative z-10 font-sans leading-tight">
+                            אלגברה ליניארית 2
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            ערכים עצמיים ווקטורים עצמיים, לכסון מטריצות, מרחבי מכפלה פנימית, אופרטורים צמודים וצורת ז'ורדן.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-rose-700/80 group-hover:text-rose-600 transition-colors duration-300 relative z-10 font-sans">בפיתוח — יעלה בקרוב<i class="fa-solid fa-clock mr-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- שפות תכנות (#20905) -->
+                <article
+                    data-course-card="true"
+                    data-category="programming"
+                    data-level="level-advanced"
+                    data-status="active"
+                    data-search="שפות תכנות 20905 תחביר סמנטיקה טיפוסים פונקציונלי Scheme פקודות תכנות רמה מתקדמת 4 נז"
+                    onclick="handleCardClick('https://summary-of-programming-languages.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-sky-400/40 hover:to-blue-500/40 hover:shadow-sky-300/30 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-sky-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 11.9 12 12.5 12 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H5c0-3.87 3.13-7 7-7s7 3.13 7 7c0 1.11-.45 2.12-1.17 2.85z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-sky-600 group-hover:bg-gradient-to-br group-hover:from-sky-400 group-hover:to-blue-500 group-hover:shadow-sky-200 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-code text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-sky-600 transition-colors relative z-10 font-sans leading-tight">
+                            שפות תכנות
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            מאגר פתרונות מסודר, שאלות משנים קודמות והכנה לבחינה בחלוקה לפי נושאים.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-sky-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- תכנות מונחה עצמים (#20906) -->
+                <article
+                    data-course-card="true"
+                    data-category="programming"
+                    data-level="level-advanced"
+                    data-status="active"
+                    data-search="תכנות מונחה עצמים OOP סמולטוק Smalltalk Squeak 20906 פולימורפיזם דיספאץ תכנות רמה מתקדמת 4 נז"
+                    onclick="handleCardClick('https://object-oriented-programming.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-sky-400/40 hover:to-indigo-500/40 hover:shadow-indigo-300/30 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-sky-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 1.5l9 5.2v10.6l-9 5.2-9-5.2V6.7l9-5.2zm0 2.3L5.2 8.3 12 12.2l6.8-3.9L12 3.8zm-7.5 6.1v8.4l7 4v-8.4l-7-4zm15 0l-7 4v8.4l7-4v-8.4z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-sky-600 group-hover:bg-gradient-to-br group-hover:from-sky-400 group-hover:to-indigo-500 group-hover:shadow-sky-200 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-cubes text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-sky-600 transition-colors relative z-10 font-sans leading-tight">
+                            תכנות מונחה עצמים
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            עקרונות Pure OOP, שפת Smalltalk וסביבת Squeak, היררכיית מחלקות, מעקבי Dispatch ומבחנים.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-sky-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- מודלים חישוביים (#20604) -->
+                <article
+                    data-course-card="true"
+                    data-category="ai"
+                    data-level="level-advanced"
+                    data-status="active"
+                    data-search="מודלים חישוביים 20604 אוטומטים שפות פורמליות טיורינג כריעות סיבוכיות תיאוריה בינה מלאכותית מדעים מדויקים רמה מתקדמת 5 נז"
+                    onclick="handleCardClick('https://computational-models.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-amber-400/40 hover:to-orange-500/40 hover:shadow-amber-300/30 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-amber-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-amber-600 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-orange-500 group-hover:shadow-amber-200 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-infinity text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-amber-600 transition-colors relative z-10 font-sans leading-tight">
+                            מודלים חישוביים
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            אוטומטים, שפות רגולריות, מכונות טיורינג, כריעות וסיבוכיות. סיכומים ותרגול אינטראקטיבי.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-amber-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- מערכות הפעלה (#20594) -->
+                <article
+                    data-course-card="true"
+                    data-category="systems"
+                    data-level="level-advanced"
+                    data-status="active"
+                    data-search="מערכות הפעלה Operating Systems 20594 מערכות וסייבר לינוקס xv6 זיכרון מדומה תהליכים סנכרון ירקרק רמה מתקדמת 4 נז"
+                    onclick="handleCardClick('https://operating-system-5l3.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-emerald-400/40 hover:to-teal-500/40 hover:shadow-emerald-300/30 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-emerald-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-emerald-600 group-hover:bg-gradient-to-br group-hover:from-emerald-400 group-hover:to-teal-500 group-hover:shadow-emerald-200 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-server text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-emerald-600 transition-colors relative z-10 font-sans leading-tight">
+                            מערכות הפעלה
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            סיכומים מקיפים, תרגול שאלות אמריקאיות, מבחנים מלאים ומדריכים להצלחה בבחינה.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-emerald-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- רשתות תקשורת מחשבים (#20948) -->
+                <article
+                    data-course-card="true"
+                    data-category="systems"
+                    data-level="level-advanced"
+                    data-status="active"
+                    data-search="רשתות תקשורת מחשבים 20948 TCP IP UDP HTTP DNS ניתוב מתגים שכבות אינטרנט רמה מתקדמת 4 נז"
+                    onclick="handleCardClick('https://communication-networks.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-emerald-400/40 hover:to-teal-500/40 hover:shadow-emerald-300/30 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-emerald-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 16h-4v-3h1a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1v3H7a2 2 0 0 0-2 2v3h2v-3h10v3h2v-3a2 2 0 0 0-2-2zM10 5h4v6h-4V5z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-emerald-600 group-hover:bg-gradient-to-br group-hover:from-emerald-400 group-hover:to-teal-500 group-hover:shadow-emerald-200 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-network-wired text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-emerald-600 transition-colors relative z-10 font-sans leading-tight">
+                            רשתות תקשורת מחשבים
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            מודל השכבות Top-Down, פרוטוקולי אינטרנט, TCP/UDP, ניתוב, מתגים, סימולציות טופולוגיה ומבחנים.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-emerald-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- מבוא לאבטחת המרחב המקוון (#20940) -->
+                <article
+                    data-course-card="true"
+                    data-category="systems"
+                    data-level="level-advanced"
+                    data-status="active"
+                    data-search="אבטחת המרחב המקוון סייבר 20940 אבטחת מידע קריפטוגרפיה הצפנה התקפות הגנה רמה מתקדמת 4 נז"
+                    onclick="handleCardClick('https://introduction-to-cybersecurity.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-emerald-400/35 hover:to-teal-400/35 hover:shadow-emerald-200/40 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-emerald-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-emerald-600 group-hover:bg-gradient-to-br group-hover:from-emerald-400 group-hover:to-teal-500 group-hover:shadow-emerald-200 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-shield-halved text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-emerald-600 transition-colors relative z-10 font-sans leading-tight">
+                            מבוא לאבטחת המרחב המקוון
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            יסודות אבטחת מידע, קריפטוגרפיה, הגנת רשתות, ניתוח חולשות, קוד בטוח וסימולציות.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-emerald-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
+
+                <!-- מבוא לבינה מלאכותית (#20551) -->
+                <article
+                    data-course-card="true"
+                    data-category="ai"
+                    data-level="level-advanced"
+                    data-status="active"
+                    data-search="בינה מלאכותית AI 20551 אלפא בטא A כוכב MDP חיפוש משחקים זהב מדעים מדויקים רמה מתקדמת 4 נז"
+                    onclick="handleCardClick('https://introduction-to-artificial-intelligence.pages.dev/', true)"
+                    class="aspect-square group text-right relative overflow-hidden flex flex-col bg-gradient-to-br from-white/20 to-white/10 hover:from-amber-400/40 hover:to-orange-500/40 hover:shadow-amber-300/30 rounded-[22px] p-[2px] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer font-sans ">
+                    
+                    <div class="bg-white/15 backdrop-blur-xl rounded-[20px] p-4 sm:p-4.5 h-full relative z-10 flex flex-col text-right border border-white/25 hover:bg-white/25 transition-all duration-500 shadow-[0_8px_32px_rgba(255,255,255,0.03)] overflow-hidden">
+                        
+                        <!-- Watermark SVG Icon matching deployed site -->
+                        <svg class="absolute bottom-[-5%] left-[-5%] w-28 h-28 sm:w-32 sm:h-32 text-amber-50 opacity-20 group-hover:opacity-40 group-hover:-rotate-12 transition-all duration-700 pointer-events-none z-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h2a3 3 0 0 1 3 3v1h1a2 2 0 1 1 0 4h-1v2a3 3 0 0 1-3 3h-2v1.28c.6.34 1 .98 1 1.72a2 2 0 1 1-4 0c0-.74.4-1.38 1-1.72V19H9a3 3 0 0 1-3-3v-2H5a2 2 0 1 1 0-4h1V9a3 3 0 0 1 3-3h2V5.72c-.6-.34-1-.98-1-1.72a2 2 0 0 1 2-2z"></path>
+                        </svg>
+
+                        <!-- Top Row: Icon on left (in RTL), Status Badge on right -->
+                        <div class="flex items-start justify-between mb-2.5 relative z-10">
+                            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/20 flex items-center justify-center text-amber-600 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-orange-500 group-hover:shadow-amber-200 group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg shadow-inner">
+                                <i class="fa-solid fa-brain text-xl"></i>
+                            </div>
+                            <span class="bg-emerald-500/15 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full text-emerald-700 font-extrabold tracking-wide flex items-center gap-1 group-hover:bg-white group-hover:text-emerald-700 group-hover:border-white/80 transition-colors shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span> פעיל</span>
+                        </div>
+
+                        <!-- Course Title -->
+                        <h2 class="text-base sm:text-lg font-bold text-slate-800 mb-1 group-hover:text-amber-600 transition-colors relative z-10 font-sans leading-tight">
+                            מבוא לבינה מלאכותית
+                        </h2>
+
+                        <!-- Course Description -->
+                        <p class="text-xs text-slate-500 leading-snug font-medium relative z-10 flex-grow font-sans line-clamp-3">
+                            סוכנים תבוניים, חיפוש יוריסטי ומשחקים (A*, Minimax), סיפוק אילוצים ולמידת מכונה.
+                        </p>
+
+                        <!-- Bottom Action Link -->
+                        <div class="mt-auto pt-2 flex items-center text-xs font-bold text-slate-400 group-hover:text-amber-600 transition-colors duration-300 relative z-10 font-sans">כניסה לקורס<i class="fa-solid fa-arrow-left mr-1.5 transform transition-transform duration-300 group-hover:-translate-x-1.5 text-[10px]"></i></div>
+
+                    </div>
+                </article>
 
             </div>
-        </section>
 
+            <!-- הודעה כאשר חיפוש לא מוצא תוצאות -->
+            <div id="no-results-box" class="hidden w-full my-8 bg-white/40 backdrop-blur-xl border border-white/60 rounded-2xl p-6 text-center shadow-sm">
+                <p class="text-sm font-bold text-slate-700 mb-1">לא נמצא קורס התואם לחיפוש שלך</p>
+                <p class="text-xs text-slate-500 mb-3">נסו לחפש לפי שם קורס או מספר (למשל 20594, אינפי, מודלים)</p>
+                <button type="button" onclick="resetFilters()" class="px-4 py-1.5 rounded-full bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold shadow-sm transition-colors cursor-pointer">
+                    הצגת כל 11 הקורסים
+                </button>
+            </div>
+
+        </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- ============================================================= -->
+    <!-- Footer Section (זהה למקור עם כפתורי הרשתות וההצהרה) -->
+    <!-- ============================================================= -->
     <footer class="bg-transparent pb-8 relative z-30 mt-auto">
         <div class="container mx-auto px-4 flex flex-col items-center">
+            <h4 class="text-center text-slate-600 font-extrabold text-sm uppercase tracking-widest mb-4">
+                דרכי התקשרות
+            </h4>
 
-            <h4 class="text-center text-slate-600 font-extrabold text-sm uppercase tracking-widest mb-5 mt-4">
-                קישורים מהירים</h4>
-
-            <!-- רשתות חברתיות ויצירת קשר (Glassmorphism Buttons) -->
-            <div class="flex justify-center items-center gap-6 mt-6 mb-8 opacity-0 animate-fade-in-up delay-900">
-                <!-- לינקדאין -->
-                <a href="https://linkedin.com/in/yair-kurtzman-382417247" target="_blank" title="LinkedIn"
-                    class="group w-14 h-14 bg-white/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-sm border border-white/40 hover:border-sky-400 hover:bg-sky-500/20 hover:shadow-lg hover:-translate-y-2 hover:scale-105 transition-all duration-300 text-slate-600">
-                    <svg class="w-6 h-6 group-hover:text-sky-600 transition-colors" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-1.61 1.61h-.022A1.61 1.61 0 0 1 3.96 6.106a1.61 1.61 0 1 1 3.24 0ZM7.18 19.5H4V8.796h3.18V19.5Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </a>
-
-
-                <!-- וואטסאפ -->
-                <!-- Replace 972500000000 with your actual phone number -->
-                <a href="https://wa.me/972586736525" target="_blank" title="WhatsApp"
-                    class="group w-14 h-14 bg-white/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-sm border border-white/40 hover:border-green-400 hover:bg-green-500/20 hover:shadow-lg hover:-translate-y-2 hover:scale-105 transition-all duration-300 text-slate-600">
-                    <i class="fa-brands fa-whatsapp text-2xl group-hover:text-green-500 transition-colors"></i>
-                </a>
-
+            <!-- כפתורי רשתות וקשר (Glassmorphism Buttons המקוריים) -->
+            <div class="flex justify-center items-center gap-6 mt-2 mb-6">
                 <!-- קצת עליי -->
                 <a href="about.html" title="קצת עליי"
                     class="group w-14 h-14 bg-white/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-sm border border-white/40 hover:border-indigo-400 hover:bg-indigo-500/20 hover:shadow-lg hover:-translate-y-2 hover:scale-105 transition-all duration-300 text-slate-600">
                     <i class="fa-solid fa-user text-xl group-hover:text-indigo-500 transition-colors"></i>
                 </a>
+
+                <!-- שאלות נפוצות -->
+                <button type="button" onclick="openModal('modal-faq')" title="שאלות נפוצות"
+                    class="group w-14 h-14 bg-white/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-sm border border-white/40 hover:border-amber-400 hover:bg-amber-500/20 hover:shadow-lg hover:-translate-y-2 hover:scale-105 transition-all duration-300 text-slate-600 cursor-pointer">
+                    <i class="fa-solid fa-circle-question text-xl group-hover:text-amber-500 transition-colors"></i>
+                </button>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/972586736525" target="_blank" rel="noopener" title="WhatsApp"
+                    class="group w-14 h-14 bg-white/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-sm border border-white/40 hover:border-green-400 hover:bg-green-500/20 hover:shadow-lg hover:-translate-y-2 hover:scale-105 transition-all duration-300 text-slate-600">
+                    <i class="fa-brands fa-whatsapp text-2xl group-hover:text-green-500 transition-colors"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/yair-kurtzman-382417247" target="_blank" rel="noopener" title="LinkedIn"
+                    class="group w-14 h-14 bg-white/30 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-sm border border-white/40 hover:border-sky-400 hover:bg-sky-500/20 hover:shadow-lg hover:-translate-y-2 hover:scale-105 transition-all duration-300 text-slate-600">
+                    <svg aria-hidden="true" class="w-6 h-6 group-hover:text-sky-600 transition-colors" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-1.61 1.61h-.022A1.61 1.61 0 0 1 3.96 6.106a1.61 1.61 0 1 1 3.24 0ZM7.18 19.5H4V8.796h3.18V19.5Z" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- הצהרת זכויות יוצרים והבהרת האו"פ ישירות בעמוד ולא בתפריט -->
+            <div class="max-w-2xl w-full bg-white/30 backdrop-blur-md border border-white/40 rounded-2xl px-4 py-2.5 text-center shadow-sm space-y-0.5">
+                <p class="text-[11px] font-extrabold text-slate-700">
+                    © כל הזכויות על הפורטל והסימולטורים שמורות ליאיר קורצמן (Yair Kurtzman).
+                </p>
+                <p class="text-[10px] text-slate-500 font-medium leading-relaxed">
+                    האתר נועד לסייע לתלמידי האוניברסיטה הפתוחה. הזכויות על חומרי הלימוד המקוריים ושאלות הבחינות שייכות לאוניברסיטה הפתוחה (ללא שימוש מסחרי).
+                </p>
             </div>
         </div>
     </footer>
 
-</body>
+    <!-- ============================================================= -->
+    <!-- חלונית מודאל: שאלות נפוצות — שאלות נפתחות (Accordion) -->
+    <!-- ============================================================= -->
+    <div id="modal-faq" class="fixed inset-0 z-[100] hidden items-center justify-center p-3 sm:p-6 bg-slate-900/40 backdrop-blur-md"
+         onclick="if(event.target===this) closeModal('modal-faq');">
+        <article class="relative w-full max-w-3xl max-h-[85vh] bg-[#f8fafc]/95 backdrop-blur-2xl border border-white/80 rounded-3xl shadow-2xl overflow-hidden flex flex-col animate-modal-pop text-right">
+            <header class="px-6 py-4 bg-white/80 border-b border-slate-200/70 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 border border-amber-200/60 flex items-center justify-center shadow-sm">
+                        <i class="fa-solid fa-comments text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-black text-slate-800">שאלות נפוצות ודיוקים</h3>
+                        <p class="text-xs text-slate-500">כל מה שחשוב לדעת על הפרויקט ומאגרי הבחינות</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeModal('modal-faq')" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors cursor-pointer">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </header>
 
+            <div class="p-5 sm:p-6 overflow-y-auto space-y-3">
+                
+                <!-- שאלה 1: איך נוצרו האתרים בשילוב AI -->
+                <details class="group bg-gradient-to-r from-indigo-50/90 to-sky-50/90 border border-indigo-200 rounded-xl p-3.5 shadow-sm transition-all open:shadow-md">
+                    <summary class="flex items-center justify-between cursor-pointer list-none font-extrabold text-indigo-950 text-xs sm:text-sm select-none">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-indigo-600"></i>
+                            איך נוצרו אתרי מאגרי הבחינות? (AI משולב סקירה ודיוק אנושי)
+                        </span>
+                        <span class="w-6 h-6 rounded-full bg-white/80 group-open:bg-indigo-600 group-open:text-white flex items-center justify-center text-indigo-600 text-xs transition-transform group-open:rotate-180 shrink-0">
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-2.5 pt-2 border-t border-indigo-100 text-xs text-slate-700 leading-relaxed font-medium">
+                        כל אתר בקורסים השונים נבנה בתהליך רב-שלבי קפדני: מודלי בינה מלאכותית מתקדמים (LLM) סייעו לנתח, לחלץ ולבנות שלדי פתרונות ראשוניים מתוך מאות קובצי בחינות עבר של האו"פ. לאחר מכן, כל שאלה ונוסחה עברו סקירה מעמיקה, בדיקה מול פתרונות רשמיים, ודיוקים ידניים קפדניים כדי להבטיח 100% דיוק פדגוגי. התוצאה היא שילוב של מהירות AI עם אמינות אקדמית ללא פשרות.
+                    </div>
+                </details>
+
+                <!-- שאלה 2: פתרונות ב-3 שכבות -->
+                <details class="group bg-white/85 hover:bg-white border border-slate-200/80 rounded-xl p-3.5 shadow-sm transition-all open:shadow-md">
+                    <summary class="flex items-center justify-between cursor-pointer list-none font-extrabold text-slate-800 text-xs sm:text-sm select-none">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-question text-sky-500"></i>
+                            מה זה שיטת "פתרון ב-3 שכבות" שקיימת במאגרי הבחינות?
+                        </span>
+                        <span class="w-6 h-6 rounded-full bg-slate-100 group-open:bg-sky-500 group-open:text-white flex items-center justify-center text-slate-500 text-xs transition-transform group-open:rotate-180 shrink-0">
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-2.5 pt-2 border-t border-slate-100 text-xs text-slate-600 leading-relaxed font-medium">
+                        כדי למנוע תלות בפתרונות מוכנים, כל שאלת מבחן מחולקת לשלוש רמות: <strong>שכבה 1 (כיוון ואינטואיציה)</strong> שמסבירה מה הרעיון המרכזי בשאלה; <strong>שכבה 2 (רמז הדרכתי)</strong> שנותנת את המשפט או האלגוריתם המתאים; ו-<strong>שכבה 3 (פתרון מלא ופורמלי)</strong> ברמת הגשה של 100 בבחינה.
+                    </div>
+                </details>
+
+                <!-- שאלה 3: האם האתר בחינם -->
+                <details class="group bg-white/85 hover:bg-white border border-slate-200/80 rounded-xl p-3.5 shadow-sm transition-all open:shadow-md">
+                    <summary class="flex items-center justify-between cursor-pointer list-none font-extrabold text-slate-800 text-xs sm:text-sm select-none">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-question text-sky-500"></i>
+                            תגיד, זה באמת בחינם? איפה הקאץ'?
+                        </span>
+                        <span class="w-6 h-6 rounded-full bg-slate-100 group-open:bg-sky-500 group-open:text-white flex items-center justify-center text-slate-500 text-xs transition-transform group-open:rotate-180 shrink-0">
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-2.5 pt-2 border-t border-slate-100 text-xs text-slate-600 leading-relaxed font-medium">
+                        בחינם לחלוטין, מכל הלב! אין שום קאץ', אין הרשמה, אין דמי מנוי ואין פרסומות. הקמתי את כל האתרים האלה כסטודנט בשביל סטודנטים כדי שלכולנו יהיה קל יותר לעבור את התואר בהצלחה.
+                    </div>
+                </details>
+
+                <!-- שאלה 4: איך ללמוד -->
+                <details class="group bg-white/85 hover:bg-white border border-slate-200/80 rounded-xl p-3.5 shadow-sm transition-all open:shadow-md">
+                    <summary class="flex items-center justify-between cursor-pointer list-none font-extrabold text-slate-800 text-xs sm:text-sm select-none">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-question text-sky-500"></i>
+                            איך הכי מומלץ ללמוד עם האתרים לקראת המבחן?
+                        </span>
+                        <span class="w-6 h-6 rounded-full bg-slate-100 group-open:bg-sky-500 group-open:text-white flex items-center justify-center text-slate-500 text-xs transition-transform group-open:rotate-180 shrink-0">
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-2.5 pt-2 border-t border-slate-100 text-xs text-slate-600 leading-relaxed font-medium">
+                        במהלך הסמסטר: היעזרו בסיכומים ובסימולטורים האינטראקטיביים במקביל להרצאות ולממ"נים. בחודש שלפני המבחן: צללו למאגרי הבחינות הפתורות — נסו לפתור לבד עם הרמזים, ורק אחר כך השוו לפתרון הפורמלי המלא.
+                    </div>
+                </details>
+
+                <!-- שאלה 5: התאמה לסילבוסים -->
+                <details class="group bg-white/85 hover:bg-white border border-slate-200/80 rounded-xl p-3.5 shadow-sm transition-all open:shadow-md">
+                    <summary class="flex items-center justify-between cursor-pointer list-none font-extrabold text-slate-800 text-xs sm:text-sm select-none">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-question text-sky-500"></i>
+                            החומר מעודכן למבחנים של השנה (2026)?
+                        </span>
+                        <span class="w-6 h-6 rounded-full bg-slate-100 group-open:bg-sky-500 group-open:text-white flex items-center justify-center text-slate-500 text-xs transition-transform group-open:rotate-180 shrink-0">
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </span>
+                    </summary>
+                    <div class="mt-2.5 pt-2 border-t border-slate-100 text-xs text-slate-600 leading-relaxed font-medium">
+                        כן, ב-100%. כל האתרים מעודכנים לפי הסילבוס החדש ביותר של האו"פ — כולל מודלים חישוביים (20604) המאוחד ומונחה עצמים (20906) בשפת Smalltalk.
+                    </div>
+                </details>
+
+            </div>
+            
+            <footer class="px-6 py-3 bg-white/80 border-t border-slate-200/70 flex items-center justify-between">
+                <span class="text-xs text-slate-400 font-medium">יש לכם שאלה או הצעה? דברו איתי בוואטסאפ!</span>
+                <button type="button" onclick="closeModal('modal-faq')" class="px-4 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-colors cursor-pointer">
+                    סגירה
+                </button>
+            </footer>
+        </article>
+    </div>
+
+    <!-- הודעת טוסט עבור קורסים שטרם עלו -->
+    <div id="toast-inactive"
+         class="fixed bottom-6 right-6 z-[120] hidden items-center gap-3 px-4 py-3 rounded-2xl bg-slate-900/90 text-white backdrop-blur-xl border border-rose-400/40 shadow-xl transition-all duration-300 translate-y-3 opacity-0">
+        <div class="w-7 h-7 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-hourglass-half text-xs"></i>
+        </div>
+        <div class="text-right">
+            <p id="toast-title" class="text-xs font-bold text-white">הקורס נמצא כעת בפיתוח</p>
+            <p class="text-[10px] text-slate-300">הסיכומים והבחינות יעלו לאוויר בהמשך בעזרת השם :)</p>
+        </div>
+        <button type="button" onclick="hideToast()" class="mr-2 text-slate-400 hover:text-white cursor-pointer">
+            <i class="fa-solid fa-xmark text-xs"></i>
+        </button>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- JavaScript לניהול סינון, חיפוש, לחיצות כרטיסייה ומודאלים -->
+    <!-- ============================================================= -->
+    <script>
+        let currentFilter = 'all';
+        let searchQuery = '';
+
+        function applyFilters() {
+            const cards = document.querySelectorAll('[data-course-card="true"]');
+            let visibleCount = 0;
+            const q = searchQuery.trim().toLowerCase();
+
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category') || '';
+                const level = card.getAttribute('data-level') || '';
+                const searchData = (card.getAttribute('data-search') || '').toLowerCase();
+
+                let matchesFilter = false;
+                if (currentFilter === 'all') {
+                    matchesFilter = true;
+                } else if (currentFilter === 'level-basic') {
+                    matchesFilter = (level === 'level-basic');
+                } else if (currentFilter === 'level-advanced') {
+                    matchesFilter = (level === 'level-advanced');
+                } else {
+                    matchesFilter = (category === currentFilter);
+                }
+
+                const matchesSearch = (!q) || searchData.includes(q);
+
+                if (matchesFilter && matchesSearch) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            const noResults = document.getElementById('no-results-box');
+            if (noResults) {
+                if (visibleCount === 0) {
+                    noResults.classList.remove('hidden');
+                } else {
+                    noResults.classList.add('hidden');
+                }
+            }
+        }
+
+        function filterCourses(filterKey, btnEl) {
+            currentFilter = filterKey;
+            document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+            if (btnEl) btnEl.classList.add('active');
+            applyFilters();
+        }
+
+        function handleSearchInput(val) {
+            searchQuery = val || '';
+            applyFilters();
+        }
+
+        function resetFilters() {
+            currentFilter = 'all';
+            searchQuery = '';
+            const input = document.getElementById('course-search-input');
+            if (input) input.value = '';
+            const pills = document.querySelectorAll('.filter-pill');
+            pills.forEach((b, idx) => {
+                if (idx === 0) b.classList.add('active');
+                else b.classList.remove('active');
+            });
+            applyFilters();
+        }
+
+        function handleCardClick(url, isActive) {
+            if (isActive && url) {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            }
+        }
+
+        let toastTimeout;
+        function handleInactiveCard(courseName) {
+            const toast = document.getElementById('toast-inactive');
+            const toastTitle = document.getElementById('toast-title');
+            if (toast && toastTitle) {
+                toastTitle.textContent = 'הקורס ' + courseName + ' נמצא כעת בשלבי פיתוח';
+                toast.classList.remove('hidden');
+                requestAnimationFrame(() => {
+                    toast.classList.remove('translate-y-3', 'opacity-0');
+                });
+                clearTimeout(toastTimeout);
+                toastTimeout = setTimeout(() => {
+                    hideToast();
+                }, 4000);
+            }
+        }
+
+        function hideToast() {
+            const toast = document.getElementById('toast-inactive');
+            if (toast) {
+                toast.classList.add('translate-y-3', 'opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        function openModal(id) {
+            const m = document.getElementById(id);
+            if (m) {
+                m.classList.remove('hidden');
+                m.classList.add('flex');
+            }
+        }
+
+        function closeModal(id) {
+            const m = document.getElementById(id);
+            if (m) {
+                m.classList.add('hidden');
+                m.classList.remove('flex');
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal('modal-faq');
+            }
+        });
+    </script>
+
+</body>
 </html>

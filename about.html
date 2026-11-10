@@ -4,53 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>קצת עליי</title>
-    <!-- Heebo and Assistant Google Fonts -->
+    <title>מאגר הקורסים הראשי</title>
+    <meta name="description" content="הסיפור האישי של יאיר קורצמן ומתודולוגיית הפיתוח של 11 אתרי הלימוד ומאגרי הבחינות: סינרגיה של בינה מלאכותית (AI) יחד עם סקירה מעמיקה, דיוקים ידניים ובנייה רב-שלבית.">
+    <meta name="keywords" content="יאיר קורצמן, Yair Kurtzman, האוניברסיטה הפתוחה, מדעי המחשב, אתרי קורסים, מאגרי בחינות פתורים, בינה מלאכותית בלימודים, שפות תכנות, מערכות הפעלה, אינפי, מודלים חישוביים">
+    <meta name="author" content="יאיר קורצמן (Yair Kurtzman)">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://all-the-courses.pages.dev/about.html">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="he_IL">
+    <meta property="og:site_name" content="מאגר הקורסים הראשי — יאיר קורצמן">
+    <meta property="og:title" content="קצת עליי ומתודולוגיית הפיתוח — יאיר קורצמן | האוניברסיטה הפתוחה">
+    <meta property="og:description" content="הסיפור מאחורי הפרויקט וכיצד פותחו 11 אתרי הלימוד ומאגרי הבחינות: שילוב AI מתקדם עם בדיקה מעמיקה ובנייה בשלבים רבים.">
+    <meta property="og:url" content="https://all-the-courses.pages.dev/about.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="קצת עליי ומתודולוגיית הפיתוח — יאיר קורצמן">
+    <meta name="twitter:description" content="הסיפור מאחורי מאגר אתרי הקורסים האינטראקטיביים במדעי המחשב והמתמטיקה.">
+
+    <!-- Schema.org Structured Data: ProfilePage + Person + BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://all-the-courses.pages.dev/about.html#profile",
+      "url": "https://all-the-courses.pages.dev/about.html",
+      "name": "קצת עליי ומתודולוגיית הפיתוח — יאיר קורצמן",
+      "inLanguage": "he",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://all-the-courses.pages.dev/#author",
+        "name": "יאיר קורצמן",
+        "alternateName": "Yair Kurtzman",
+        "jobTitle": "סטודנט למדעי המחשב ומפתח אתרי למידה אינטראקטיביים",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "האוניברסיטה הפתוחה"
+        },
+        "sameAs": [
+          "https://linkedin.com/in/yair-kurtzman-382417247"
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "מאגר הקורסים הראשי",
+          "item": "https://all-the-courses.pages.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "קצת עליי ומתודולוגיית הפיתוח",
+          "item": "https://all-the-courses.pages.dev/about.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Assistant:wght@300;400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Assistant:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        calmBg: '#f4f7fb',
-                        cardBg: '#ffffff',
-                        textMain: '#334155',
-                        textMuted: '#64748b',
-                        accentSoft: '#38bdf8',
-                        accentStrong: '#0284c7',
-                        accentHover: '#e0f2fe',
-                        primary: '#1d4ed8',
-                        dark: '#0f172a',
-                    },
-                    fontFamily: {
-                        sans: ['Heebo', 'Assistant', 'sans-serif']
-                    },
-                    animation: {
-                        'blob': 'blob 7s infinite',
-                        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
-                    },
-                    keyframes: {
-                        blob: {
-                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-                            '100%': { transform: 'translate(0px, 0px) scale(1)' }
-                        },
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <style>
         body {
             background-color: #f4f7fb;
@@ -59,84 +86,110 @@
                 linear-gradient(135deg, #f8fafc 0%, #f0f9ff 50%, #e0f2fe 100%);
             background-size: 32px 32px, cover;
             background-attachment: fixed;
-            font-family: 'Heebo', 'Assistant', 'sans-serif';
+            font-family: 'Heebo', 'Assistant', sans-serif;
         }
     </style>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284c7'%3E%3Cpath d='M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z'/%3E%3C/svg%3E">
 </head>
 
-<body class="text-textMain min-h-screen relative flex flex-col overflow-y-auto">
+<body class="text-slate-700 min-h-screen relative flex flex-col overflow-y-auto selection:bg-sky-200 selection:text-slate-900">
 
-    <!-- Background lighting blobs -->
-    <div
-        class="absolute top-0 right-[-10%] w-96 h-96 bg-sky-300/30 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0">
-    </div>
-    <div class="absolute bottom-[20%] left-[-10%] w-80 h-80 bg-indigo-300/25 rounded-full filter blur-[100px] animate-blob pointer-events-none z-0"
-        style="animation-delay: 2s;"></div>
-    <div class="absolute top-[40%] left-[20%] w-72 h-72 bg-pink-300/15 rounded-full filter blur-[90px] animate-blob pointer-events-none z-0"
-        style="animation-delay: 4s;"></div>
+    <!-- Floating Background Blobs -->
+    <div class="fixed top-0 right-[-10%] w-96 h-96 bg-sky-300/30 rounded-full filter blur-[100px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[20%] left-[-10%] w-80 h-80 bg-indigo-300/25 rounded-full filter blur-[100px] pointer-events-none z-0"></div>
 
-    <!-- Top Navigation -->
+    <!-- Navigation Header -->
     <nav class="relative z-50 px-6 py-4 flex items-center justify-between">
         <a href="index.html"
-            class="flex items-center text-slate-600 hover:text-sky-600 transition-colors font-bold group bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/50 shadow-sm">
+            class="flex items-center text-slate-700 hover:text-sky-600 transition-colors font-bold group bg-white/70 hover:bg-white backdrop-blur-md px-4 py-2 rounded-full border border-white/80 shadow-sm text-xs sm:text-sm">
             <i class="fa-solid fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
-            חזרה למאגר הקורסים
+            חזרה למאגר הקורסים הראשי
         </a>
     </nav>
 
     <!-- Main Content -->
     <main class="flex-grow relative z-10 flex flex-col items-center justify-center px-4 py-8">
-
-        <article
-            class="max-w-3xl w-full bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl p-8 md:p-12 shadow-xl shadow-slate-200/50 opacity-0 animate-fade-in-up">
+        <article class="max-w-3xl w-full bg-white/65 backdrop-blur-2xl border border-white/80 rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl">
             
-            <header class="flex items-center gap-5 mb-8 pb-6 border-b border-slate-200/50">
-                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-400 to-sky-400 flex items-center justify-center text-white shadow-lg">
+            <header class="flex items-center gap-4 sm:gap-5 mb-8 pb-6 border-b border-slate-200/60">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-sky-500 flex items-center justify-center text-white shadow-lg shadow-sky-200 shrink-0">
                     <i class="fa-solid fa-user-graduate text-3xl"></i>
                 </div>
                 <div>
-                    <h1 class="text-3xl font-extrabold text-slate-800">קצת עליי</h1>
-                    <p class="text-slate-500 font-medium">הסיפור מאחורי מאגר הקורסים</p>
+                    <h1 class="text-2xl sm:text-3xl font-black text-slate-800">קצת עליי — יאיר קורצמן</h1>
+                    <p class="text-slate-500 font-medium text-xs sm:text-sm">הסיפור מאחורי הפרויקט ומתודולוגיית פיתוח מאגרי הבחינות</p>
                 </div>
             </header>
 
-            <div class="space-y-6 text-slate-700 leading-relaxed text-lg font-medium">
-                <p>
-                    היי :) קוראים לי יאיר קורצמן, סטודנט שנה שלישית למדעי המחשב באוניברסיטה הפתוחה, ורציתי לשתף אותכם קצת על מאיפה נולד הרעיון והפרוייקט של אתרי הלימוד, נתחיל ישר מהתכלס-
-                </p>
-                <p>
-                    אני לא מהסטודנטים הגאונים האלה שמקבלים מאיות בלי מאמץ, אלה שלומדים את כל הקורס ביומיים ומוכנים למבחן תוך שבוע. אצלי זה בדיוק ההפך. כל ציון עובר שלי הושג בדם, יזע ודמעות. לאורך הדרך התמודדתי עם לא מעט כישלונות, וכמו לרבים, היו לי גם סיבות ומורכבויות אובייקטיביות: מאות ימי שירות מילואים, מעברי דירה, חתונה, ולידת בתי. החיים עצמם. ובשורה התחתונה, כשמסתכלים על גיליון הציונים שלי – הוא לא מושלם, והוא בהחלט משקף את המאבקים האלה.
-                </p>
-                <p>
-                    נקודת המפנה שלי הייתה בקורס "שפות תכנות". מצאתי את עצמי מול קורס שהיה לי, באופן אישי, פשוט קשה לעיכול. מושגים מבלבלים, שיעורים שהתקשיתי לראות איך הם מתחברים לתמונה אחת, וחוסר סדר שגרם לי לתסכול עצום.
-                </p>
-                <p>
-                    אבל התסכול הזה פתח לי דלת למשהו חדש. החלטתי לנסות לעשות לעצמי קצת סדר בראש. התחלתי בקטנה – לכתוב סיכום. מפה לשם, הסיכום הקטן צמח למדריך למידה, התרחב להכנה למבחן, ובסוף איגדתי את הכל והעליתי לאוויר בתור אתר אינטרנט שלם.
-                </p>
-                <p>
-                    והאמת? גיליתי שאני נהנה מזה בטירוף. הבנתי שאני אדם שלומד דרך העיניים. אני צריך סדר, ארגון ועזרים ויזואליים. הררים של טקסט חסר הקשר, נוסחאות ומספרים יבשים פשוט גורמים לי לאבד ריכוז. והבנתי דבר נוסף – כנראה שיש עוד המון סטודנטים בדיוק כמוני.
-                </p>
-                <p>
-                    כך נולד הפרויקט שלי: לקחת קורס אחרי קורס, ולהפוך את הררי הדפים והמספרים לחוויית למידה שאפשר לצלוח בלי להירדם אחרי עמוד וחצי.
-                </p>
-                <p>
-                    מהר מאוד זו הפכה להתמכרות. עוד לפני שסיימתי לגמרי עם הקורס הראשון, כבר התחלתי לעבוד על הקורס הבא, "מערכות הפעלה" שלמדתי באותו סמסטר. כאן האתגר היה שונה: הקורס דווקא היה בנוי טוב, אבל כמות החומר שדרשה שינון הייתה ענקית. למרות שהנושא ריתק אותי, העומס גרם לי לאבד קשב. אז בניתי גם לו אתר נגיש, מאורגן ונוח.
-                </p>
-                <p>
-                    משם המשכתי לאתגר שתמיד היה לי הכי קשה בתואר: הקורסים המתמטיים. את המילים האלו אני כותב תוך כדי עבודה על אתר חדש לקורס אינפי. בעיניי, הפרויקט הזה יכול להיות בשורה של ממש ודרך למידה חדשה לעוד מאות ואולי אלפי סטודנטים כמוני – אנשים שאוהבים את התחום, שרוצים להצליח ויש להם המון מה להציע, אבל פשוט הולכים לאיבוד בתוך הפורמט האקדמי הנוקשה.
-                </p>
-                <p>
-                    אני מקווה שהפרויקט הזה ימשיך לגדול ולהשיג את המטרה האמיתית שלו: לעזור לעוד סטודנטים, ולהפוך את הלמידה למשהו קצת יותר מובן, נגיש, ואפילו מהנה.
-                </p>
-                <p class="font-bold text-sky-600 pt-4 text-xl">
-                    המון בהצלחה לכולם :)<br>יאיר.
-                </p>
+            <div class="space-y-6 text-slate-700 leading-relaxed text-base sm:text-lg font-medium text-right">
+                
+                <p>היי :) קוראים לי יאיר קורצמן, סטודנט שנה שלישית למדעי המחשב באוניברסיטה הפתוחה, ורציתי לשתף אותכם קצת על מאיפה נולד הרעיון והפרויקט של אתרי הלימוד, נתחיל ישר מהתכלס-</p>
+                
+                <p>אני לא מהסטודנטים הגאונים האלה שמקבלים מאיות בלי מאמץ, אלה שלומדים את כל הקורס ביומיים ומוכנים למבחן תוך שבוע. אצלי זה בדיוק ההפך. כל ציון עובר שלי הושג בדם, יזע ודמעות. לאורך הדרך התמודדתי עם לא מעט כישלונות, וכמו לרבים, היו לי גם סיבות ומורכבויות אובייקטיביות: מאות ימי שירות מילואים, מעברי דירה, חתונה, ולידת בתי. החיים עצמם. ובשורה התחתונה, כשמסתכלים על גיליון הציונים שלי – הוא לא מושלם, והוא בהחלט משקף את המאבקים האלה.</p>
+                
+                <p>נקודת המפנה שלי הייתה בקורס "שפות תכנות". מצאתי את עצמי מול קורס שהיה לי, באופן אישי, פשוט קשה לעיכול. מושגים מבלבלים, שיעורים שהתקשיתי לראות איך הם מתחברים לתמונה אחת, וחוסר סדר שגרם לי לתסכול עצום.</p>
+                
+                <p>אבל התסכול הזה פתח לי דלת למשהו חדש. החלטתי לנסות לעשות לעצמי קצת סדר בראש. התחלתי בקטנה – לכתוב סיכום. מפה לשם, הסיכום הקטן צמח למדריך למידה, התרחב להכנה למבחן, ובסוף איגדתי את הכל והעליתי לאוויר בתור אתר אינטרנט שלם.</p>
+                
+                <p>והאמת? גיליתי שאני נהנה מזה בטירוף. הבנתי שאני אדם שלומד דרך העיניים. אני צריך סדר, ארגון ועזרים ויזואליים. הררים של טקסט חסר הקשר, נוסחאות ומספרים יבשים פשוט גורמים לי לאבד ריכוז. והבנתי דבר נוסף – כנראה שיש עוד המון סטודנטים בדיוק כמוני.</p>
+                
+                <p>כך נולד הפרויקט שלי: לקחת קורס אחרי קורס, ולהפוך את הררי הדפים והמספרים לחוויית למידה שאפשר לצלוח בלי להירדם אחרי עמוד וחצי.</p>
+
+                <!-- חלק מודגש: מתודולוגיית הפיתוח בשילוב AI, דיוקים ובנייה רב-שלבית -->
+                <div class="my-6 p-6 rounded-2xl bg-gradient-to-br from-indigo-50/90 via-sky-50/70 to-white/90 border border-indigo-200/80 shadow-md">
+                    <h2 class="text-lg sm:text-xl font-black text-indigo-950 mb-3 flex items-center gap-2.5">
+                        <i class="fa-solid fa-wand-magic-sparkles text-indigo-600"></i>
+                        מתודולוגיית הפיתוח: סינרגיה של AI עם סקירה מעמיקה ובנייה בשלבים רבים
+                    </h2>
+                    <div class="text-xs sm:text-sm text-slate-700 space-y-3 font-normal leading-relaxed">
+                        <p>
+                            אחת השאלות הנפוצות ביותר היא איך נוצרו האתרים ומאגרי הבחינות העצומים (כמו מאגר 148 המבחנים במודלים חישוביים, מאגר 100+ השאלות במערכות הפעלה, ומאגרי הבחינות בסייבר, רשתות ו-OOP). 
+                        </p>
+                        <p>
+                            האתרים הללו לא נוצרו ב"לחיצת כפתור אחת של AI". נהפוך הוא: הפרויקט מבוסס על <strong>מתודולוגיית עבודה הנדסית רב-שלבית קפדנית</strong>:
+                        </p>
+                        <ul class="list-disc list-inside space-y-1.5 pr-2 font-medium text-slate-800">
+                            <li><strong>שילוב כלי בינה מלאכותית מתקדמים:</strong> שימוש ב-AI לצורך ניתוח טקסטואלי, מבנוי שאלות, יצירת סימולציות גרפיות וקידוד ראשוני של מאות מבחנים.</li>
+                            <li><strong>סקירה אנושית מעמיקה מול ספרי האו"פ:</strong> כל שאלה, טענה ומשפט נבדקו והושוו מול ספרי הלימוד הרשמיים, פתרונות סגל ההוראה והסילבוסים המעודכנים לשנת 2026.</li>
+                            <li><strong>בנייה מדורגת של פתרונות ב-3 שכבות:</strong> פירוק כל שאלת מבחן לשכבת רמז ומלכודות נפוצות, שכבת אינטואיציה לוגית, ורק לבסוף הוכחה פורמלית מלאה ומדויקת.</li>
+                            <li><strong>בדיקת דיוקים ומניעת שגיאות:</strong> תהליך סקירה חוזרת שנועד לוודא שאין "הזיות AI", שכל שורת קוד מתקמפלת ועובדת, ושכל נוסחה מתמטית מדויקת ברמת הפסיק.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>הפרויקט ממשיך להתרחב: לצד קורסי התכנות והמערכות המתקדמים, הקמתי את אתרי חשבון אינפיניטסימלי 1 ואלגברה ליניארית 1, ובימים אלו אני שוקד על אתרי ההמשך: חשבון אינפי 2 ואלגברה ליניארית 2. בעיניי, הפרויקט הזה יכול להיות בשורה של ממש ודרך למידה חדשה לעוד מאות ואולי אלפי סטודנטים כמוני – אנשים שאוהבים את התחום, שרוצים להצליח ויש להם המון מה להציע, אבל פשוט הולכים לאיבוד בתוך הפורמט האקדמי הנוקשה.</p>
+                
+                <p>אני מקווה שהפרויקט הזה ימשיך לגדול ולהשיג את המטרה האמיתית שלו: לעזור לעוד סטודנטים, ולהפוך את הלמידה למשהו קצת יותר מובן, נגיש, ואפילו מהנה.</p>
+                
+                <p class="font-extrabold text-sky-600 pt-3 text-xl">המון בהצלחה לכולם :)<br>יאיר קורצמן.</p>
             </div>
 
+            <!-- יצירת קשר מהירה -->
+            <div class="mt-8 pt-6 border-t border-slate-200/60 flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/972586736525" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-green-500 hover:bg-green-600 text-white font-bold text-xs shadow-sm transition-colors">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>וואטסאפ ישיר</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yair-kurtzman-382417247" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-sm transition-colors">
+                        <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        <span>לינקדאין</span>
+                    </a>
+                </div>
+                <a href="index.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-600 hover:text-sky-800 transition-colors">
+                    <span>חזרה למאגר הקורסים הראשי</span>
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </a>
+            </div>
+
+            <footer class="mt-8 pt-6 border-t border-slate-200/60 text-xs text-slate-500 text-center space-y-1">
+                <p class="font-bold text-slate-700">© כל הזכויות שמורות ליאיר קורצמן (Yair Kurtzman).</p>
+                <p>האתר נועד לסייע לתלמידי האוניברסיטה הפתוחה. הזכויות על חומרי הלימוד המקוריים ושאלות הבחינות שייכות לאוניברסיטה הפתוחה, ואין לעשות באתר או בתכניו שימוש מסחרי.</p>
+            </footer>
         </article>
-
     </main>
-
 </body>
 
 </html>
