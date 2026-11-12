@@ -12,6 +12,8 @@ const COURSE_ROUTES = {
   "communication-networks": "https://communication-networks.pages.dev",
   "object-oriented-programming": "https://object-oriented-programming.pages.dev",
   "infi-1": "https://infi-1.pages.dev",
+  "infi-2": "https://infi2-9rg.pages.dev",
+  "infi2": "https://infi2-9rg.pages.dev",
   "linear-1": "https://linear1.pages.dev",
   "linear1": "https://linear1.pages.dev"
 };
